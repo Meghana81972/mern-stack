@@ -1,0 +1,74 @@
+FROM IN HTML
+---------------------
+Forms are used to collect data from the user
+Eg:-signup/login/help requests/contact me
+syntax:
+----------
+<form>
+from content
+</form>
+
+ACTION IN FORM
+------------------------
+Action attribute is used to define what action is need to be 
+
+FORM ELEMENT :INPUT
+------------------------------------
+<input type="text" placeholder="Enter Name">
+LABEL
+---------
+<label for="id1">
+    <input  type = "radio" value = "classX" name = "class" id = "id1">
+</label>
+<label for="id2">
+    <input type = "radio" value = "classX" name = "class" id = "id2">
+</label>
+
+CHECK BOX
+----------------
+<label for="id1">
+   <input type ="checkbox" value="classX"name="class"id="id1">
+</label>
+<label for="id2">
+    <input type = "checkbox" value = "classX" name = "class" id = "id2">
+</label>
+checkbox type is Boolean
+
+TEXT AREA
+-----------------
+<textarea name="feedback" id="feedback" placeholder="please add feedback">
+</textarea>
+
+SELECT
+---------
+<select name="city"id="city">
+    <caption value="Delhi">Delhi</caption>
+   <caption value="Mumbai">Mumbai</caption>
+  <caption value="Guntur">Guntur</caption>
+</select>
+
+VIDEO TAG
+---------------
+<video src = "myVid.mp4">Myvideo</video>
+
+Attribute
+-------------
+->controls
+->height
+->width
+->loop
+->auto play
+
+REGISTRATION FORM
+----------------------------------
+1)username ->text
+2)email ->email
+3)gender ->radius
+4)
+5)DOB ->date
+6)middle no ->1
+7)password->password
+8)address ->select/option
+9)button ->registered
+10)text aligin->type->textarea
+
