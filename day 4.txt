@@ -1,0 +1,157 @@
+Apply styles into the page correctly we use the !important
+
+MARGIN PREFIXES IN BOOSTRAP
+------------------------------------------------
+margin : m-
+margin-top : mt-
+margin-right : mr-
+margin-bottom : mb-
+margin-left : mf-
+
+MARGIN SIZE AND VALUE:
+ ---------------------------------------
+size range : 0 to 5
+
+Here spacer : 16px
+
+MARGIN PREFIXES I BOOSTRAP:
+---------------------------------------------
+SIZE                                                                VALUE
+---------------------------------------------------------------------
+ 0                                                                     0 X spacer
+ 1                                                                     0.25 X spacer
+ 2                                                                     0.5 X spacer
+  3                                                                    1 X spacer
+  4                                                                   1.5 X spacer
+ 5                                                                  3 X spacer
+
+MARGIN PREFIXES IN BOOSTSTRAP
+------------------------------------------------
+margin : m-*
+
+-> denotes the size of the margin as discussed in the previous class
+
+-> Along with sizes margin also have another value called AUTO
+
+
+CSS GRADIENTS
+---------------------------
+It has two types:
+1)linear gradients
+2)radial gradients
+
+Linear Gradients also have directions
+
+1. to top
+2. to bottom(default)
+3. to left
+4. to right
+
+PADDING PREFEXIES IN BOOSTRAP:
+--------------------------------------------------
+padding : p-
+padding-top : pt-
+
+
+
+
+
+
+WIDTH PREFIXES IN BOOSTRAP:
+--------------------------------------------
+width : w-
+
+width values:
+--------------------
+w-25(25%)
+w-50(50%)
+w-75(75%)
+w-100(100%)
+
+ORDER CLASS IN BOOSTRAP:
+---------------------------------------------
+->order is used to change the visual order of item container
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                               JAVA SCRIPT
+
+what is java script?  
+
+(single threaded, sinecures programing language from static page to dynamic page)
+ 
+-> JS is a scripting language as well as a programing language.
+->It is High level language which comes from ECMAScript specification.
+->ES 13 is the latest version of ECMAScript version.
+->JS was introduced by Brendan Eich.
+->JS is used to make dynamic webpage.
+
+
+
+git init
+git add .
+git add commit -m "updated upto 29"
+git config --global user.email
+git config --global.name
+git branch -M main
+git remote add origin https://----
+git push -u origin main
+
+
+git commit -m "first commit"
+
+again write code
+git branch -M main
+git remote------
+git push---
+git push -u origin main
+
+
+
+
+
+git add . 
+git comit m "updated index.html"
+git push
+
+settings
+pages
+set name 
+refresh page
+link will updated "GitHub pages" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GitHub installation
+this pc
+windows c
+git lo ki poyee bin loki povali
+copy the folder path
+in the settings paste the path
+
+after installation search bar enter the environmental variables
+
