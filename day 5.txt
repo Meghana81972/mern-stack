@@ -1,0 +1,187 @@
+JAVA SCRIPT
+--------------------
+synchronous:
+------------------
+executes line by line
+if it will error will be occurred it will not execute.
+we can use promises asynchronies.
+----------------------------------------------------------------------------------------
+what is java script?  
+
+(single threaded, sinecures programing language from static page to dynamic page)
+ 
+-> JS is a scripting language as well as a programing language.
+->It is High level language which comes from ECMAScript specification.
+->ES 13 is the latest version of ECMAScript version.
+->JS was introduced by Brendan Eich.
+->JS is used to make dynamic webpage.
+
+DIFFRENCE BETWEEN SCRIPTING AND PROGRAMING LANGUAGE
+-------------------------------------------------------------------------------------------
+scripting language : are translated and cannot be converted into an executable file. SL can combine exisiting modules or components
+programing language : are generally compiled and created to be executable the fill and are used to build applications 
+
+what we are using java script ?
+->for dynamic webpages
+->for sending data to servers
+->for storing information to variables
+->it completely helps to build website
+->JS is used for dynamic webpages
+
+How to start a java script ?
+-----------------------------------
+-> For writing JS code
+we have to take .html file and save it. then write <script> element in your <head> part to access your first program in JS.
+
+what is variables?
+----------------------------
+variables are containers for storing data(storing data values)
+
+they are 4 ways to Declare a java script variable:
+->Using var   var a=10
+*it cointains the gobal scope(starting and ending of the page code)
+->Using let   let a=10
+*it can't redeclare and it can reassigned 
+it cointain the functional scope or block scope(flower brace open and close the middle code)
+->Using const   const a=10
+* it can't be redeclared and can't be reassigned.
+
+HOISTING
+-------------------
+Example:
+          console.log(a)
+          let a = 10
+
+o/p: error!
+             console.log(a)
+                                 ^
+can't access 'a' before intalization
+
+var a = 10                                                                       let a = 10
+function add() {                                                              function add() {
+       b = 20                                                                                b = 20
+       c = a+b                                                                              c = a+b
+      console.log(c)                                                             }
+}                                                                                        add()    
+                                                                                              console.log(c)   
+
+
+DATA TYPES
+---------------------
+they are two datatypes
+->primitive
+ex: num, bool, str...
+->Non primitive
+ex:   arrays
+
+1)String
+2)Number
+3)Bigint
+4)Boolean
+5)Undefines
+6)Null
+7)Symbol
+8)Object  -> it contain properties and methods
+
+Object:
+-----------
+syntax:
+............
+let variable_name={
+            key : value,
+            key : value,
+            -
+           -
+           -
+}
+  
+OPERATORS
+----------------
+there are following types of operators in javascript
+->Arithmetic operator    (+, -, *, ./.,%,++,--)
+->Comparison(Relational)operator (<,>,=,<=,>=,==,===)
+ex :  console.log(1=="1")           console.log(1==="1")
+o/p : true                                         o/p : false
+        
+->Bitwise operator   (&, |, ^, <<, >>, -, >>>)
+->Logical operator  (&&, ||, !)
+->Assignment operator   (=, <=, >=, /=, %=, -=, +=)
+
+CONDITIONAL STATEMENTS
+-----------------------------------------
+->if statement
+->else statement
+->else if statement
+
+1) if statement
+
+syntax:
+...........
+   if(expression){
+        //content will be evaluated
+  }
+
+2)if else statement
+
+syntax :
+.............
+      if(expression){
+        //content will be evaluated
+    }
+   else {
+         //content will be evaluated
+   }
+
+3)else if statement
+
+syntax:
+..............
+             if(expression 1){
+                    //content will be evaluated when expression 1 is true
+              }
+          else if (expression 2) {
+                // content will be evaluated when expression 2 is true
+          }
+          else if(expression 3) {
+                //content will be evaluated when expression 3 is true
+        }     
+        else {
+               //content will be evaluated
+       } 
+
+LOOPS
+----------
+in JS we have loops, which offer a quick and easy way to somtheing repeatedly
+->while loop
+->for loop
+Generally loops have initialization, condition, iteration
+initialization -where we start
+condition - where to end and how to end
+iteration - which help to condition execute
+
+For loop:                                                                              
+-----------
+the for statement creates a loop with 3 optional expressions
+syntax:
+............
+for(expression 1; expression 2; expression 3) {
+     //code block to be executed
+}
+
+Expression 1 is executed to 
+
+
+
+for  of - is used in iterating the objects
+for in - is used to
+syntax: for(let key in obj Var) {
+    //code 
+}
+
+
+
+
+
+
+
+
