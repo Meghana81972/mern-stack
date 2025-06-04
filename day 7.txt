@@ -1,0 +1,521 @@
+INTRODUCTION TO DOM :
+-------------------------------------
+
+WHAT IS THE DOM ?
+....................................
+
+The document object model is a programing interface for HTML and XML documents. It represents the structure of a document as a tree of objects, allowing 
+JavaScript to dynamically access and manipulate concept, structure, and style.
+
+STRUCTURE :
+....................
+
+
+CRITICAL REDARING PATH:
+
+It contains 6 parts:
+1) DOM
+2)CSS OM
+3) Render tree - JS
+4)combining of html and CSS 
+5)painting
+6)Composed tree
+
+DOCUMENT ELEMENT BY ID :
+--------------------------------------
+
+<html>
+<head>
+<title>DOM manipulation</title>     
+</head>                                      
+<body>
+<h1 id = "heading">Welcome to DOM</h1>
+<script>
+const heading = document.getElementById("heading");
+heading.textContent = "DOM manipulation in javascript";
+heading.styleColor = "blue";
+<.script>
+</body>
+<html>
+
+
+
+document represents the entire webpage :
+
+getElementById() : selects an element by it's ID
+textContent : changes the text inside the element
+style : modifies css properties
+
+
+Method -> Example -> Returns :
+getElementById()  -> documentgetElementById("header") -> single element
+
+getElementByClassName() -> documentgetElementByClassName("btn") -> HTMLCollection(live)
+
+getElementByClassName() -> documentgetElementByTagName("div") -> HTMLCollection
+
+queryselector () -> document.querySelector(".cointainer") -> First Matching element
+
+querySelectorAll() -> document.querySelectorAll("button") -> NodeList(static)
+
+//select the first button 
+
+DOCUMENT QUERY SELECTOR
+---------------------------------------------
+<html lang = "eng">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <button class="btn">button1</button>
+    <button class="btn">button2</button>
+    <script>
+        const heading = document.querySelectorAll(".btn");
+        heading.forEach(item => {
+            item.style.backgroundColor = "blue"
+        })
+
+    </script>
+</body>
+</html>
+
+DOCUMENT GET ELEMENT BY CLASS NAME
+---------------------------------------------------------
+
+<html lang = "eng">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <button class="btn">button1</button>
+    <button class="btn">button2</button>
+    <script>
+        const btn = document.getElementsByClassName("btn");
+        btn[0].style.backgroundColor = "blue"
+        btn[1].style.backgroundColor = "red"
+        
+
+    </script>
+</body>
+</html>
+
+TRAVERSING THE DOM :
+------------------------------------
+MOVING B/W NODES
+
+
+property/method => Example =>effect 
+
+textContent => element.textContent = "New Text" => Changes text
+
+innerHTML. => element.innerHTML = "<b>bold</b>" => changesHTML
+
+style => element.styleColor = "red" => Changes CSS 
+
+setAttribute() =>  elements.setAttribute("href", "#") => sets an attribute
+
+
+EXAMPLE:
+--------------
+
+<html lang = "eng">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+   <ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+   </ul>
+
+<p id = "firstdiv">hello</p>
+
+   <script>
+const   maindiv = document.getElementById("firstdiv");
+maindiv.innerhtml =  "this is added dynamically";
+
+    const list = document.getElementById("list");
+    const firstItem = list.firstElementChild;
+    const lastItem = list.lastElementChild;
+    firstItem.style.color = "red";
+    lastItem.style.color = "blue";
+   </script>
+</body>
+</html>
+
+
+Property/Method => Description => Example
+
+ParentNode =>  Parent of the node => Element.parentNode
+
+childNode => All Child Node => element.childNode
+
+lastChild => Last Child Node => element.LastChild
+
+
+
+<html lang = "eng">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+   <ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+   </ul>
+   <script>
+    const list = document.getElementById("list");
+    const firstItem = list.firstElementChild;
+    const lastItem = list.lastElementChild;
+    firstItem.style.color = "red";
+    lastItem.style.color = "blue";
+
+   </script>
+</body>
+</html>
+
+
+Method -> Example => Effect
+
+createElement() => document.createElement("div") => Creates anew Element
+
+appendChild() => parent.appendChild("newelement") => adds to be end
+
+removeChild() => parent.removeChild("child") => removes a child
+
+
+<html lang = "eng">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+   <ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+   </ul>
+   <div id = "create"></div>
+   
+
+<p id = "firstdiv">hello</p>
+
+   <script>
+const   maindiv = document.getElementById("firstdiv");
+maindiv.innerhtml =  "this is added dynamically";
+
+    const list = document.getElementById("list");
+    const firstItem = list.firstElementChild;
+    const lastItem = list.lastElementChild;
+    firstItem.style.color = "red";
+    lastItem.style.color = "blue";
+    const creation = document.getElementById("create");
+    const div = creation.createElement = "div";
+    div.textContent = "creation of element";
+    creation.appendChild("div");
+    document.body.appendChild("create");
+    create.textContent = "i am creater";
+   
+   </script>
+</body>
+</html>
+
+
+setAttribute() =>  elements.setAttribute("href", "#") => sets an attribute
+
+
+EXAMPLE :
+-----------------
+<html lang = "eng">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+   <ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+   </ul>
+  
+
+<p id = "firstdiv">hello</p>
+<div id="get">
+
+</div>
+<a id="link">link</a>
+
+<script>
+    const link = document.getElementById("link");
+    link.setAttribute("href","google.com");
+
+</script>
+  
+   
+</body>
+</html>
+
+IMAGE :
+------------------
+
+<html lang = "eng">
+
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+   <ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+   </ul>
+  
+
+<p id = "firstdiv">hello</p>
+<div id="get">
+
+</div>
+<a id="link">link</a>
+<img id="image">
+
+<script>
+    const link = document.getElementById("link");
+    link.setAttribute("href","https://google.com");
+
+</script>
+<script>
+    const image = document.getElementById("image");
+    image.setAttribute("src","images/n2.jpg");
+    
+    image.setAttribute("alt","image1")
+</script>
+  
+   
+</body>
+</html>
+
+
+//Get attribute 
+
+const link =  document.queresselctor("a");
+const href = link.getAttribute("href");
+
+
+
+//Set attribute
+
+link.setAttribute ("target","_blank");
+
+<html lang = "eng">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+   <ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+   </ul>
+<p id = "firstdiv">hello</p>
+<div id="get">
+</div>
+<a id="link">link</a>
+<img id="image">
+<script>
+    const link = document.getElementById("link");
+    link.setAttribute("href","_blank");
+</script>
+<script>
+    const image = document.getElementById("image");
+    image.setAttribute("src","images/n2.jpg");
+    image.setAttribute("alt","image1");
+</script>
+</body>
+</html>
+
+//Remove attribute
+
+link.removeAttribute("title");
+working with CSS
+
+example:
+----------
+
+<html lang = "eng">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+   <ul id="list">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+   </ul>
+<p id = "firstdiv">hello</p>
+<div id="get">
+</div>
+<a id="link">link</a>
+<img id="image">
+<script>
+    const link = document.getElementById("link");
+    link.removeAttribute("href","_blank");
+</script>
+<script>
+    const image = document.getElementById("image");
+    image.setAttribute("src","images/n2.jpg");
+    image.setAttribute("alt","image1");
+</script>
+</body>
+</html>
+
+
+EVENT HANDILLING
+-----------------------------
+
+-->Adding event listeners 
+
+const button = document.querySelector("button");
+button.addEventListeners("click",()=> {
+      alert("Button clicked !");
+})
+
+program :
+--------------
+
+<html lang = "eng">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+<button id="btn">submit</button>
+
+<script>
+   const button = document.getElementById("btn");
+   button.addEventListener("click" ,()=>{
+       alert("submitted") ;
+
+   })
+   </script>
+</body>
+</html>
+
+
+FORM HANDLING :
+------------------------
+
+preventing from submission
+
+syntax:
+-------------
+<form id = "loginform">
+<input type = "text" id = "username" placeholder = "Username"><br>
+<input type = "password" id = "password" placeholder = "password"<br>
+<button type = "submit" >Login</button>
+</form>
+
+<script>
+const form = document.getElementById("loginform");
+form.addEventListener("submit",(e) => {
+        e.preventDefault();
+})
+const username = document.getElementById("username").value;
+            console.log("Username",username);
+
+
+
+<html lang = "eng">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <form id = "loginform">
+        <input type = "text" id = "username" placeholder = "Username"><br>
+        <input type = "password" id = "password" placeholder = "Password"><br>
+        <button type = "submit" >Login</button>
+        </form>
+        <script>
+            const form = document.getElementById("loginform");
+            form.addEventListener("submit",(e) => {
+                    e.preventDefault();
+            })
+            const username = document.getElementById("username").value;
+            console.log("Username",username);
+            const password = document.getElementById("password").value;
+            console.log("Password",password);
+            </script>
+            
+            
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git add
+git commit
+git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
